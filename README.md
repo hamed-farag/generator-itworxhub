@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+# ITWORX HUB Yeoman Generator
 
-You can use the [editor on GitHub](https://github.com/hamed-farag/generator-itworxhub/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+A Tool to help the front-end developer at ITWORX HUB Team to save his time by scaffolding the repetitive tasks.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Getting Started
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+npm install -g yo
+npm install -g generator-itworxhub
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## How it work
 
-### Jekyll Themes
+You can use the following commands
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hamed-farag/generator-itworxhub/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```bash
+yo itworxhub:rsc <ComponentName>
+```
+This command to create React Stateless Component
