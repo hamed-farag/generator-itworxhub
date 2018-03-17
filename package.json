@@ -11,7 +11,11 @@
     "url": "git+https://github.com/hamed-farag/generator-itworxhub.git"
   },
   "keywords": [
-    "yeoman-generator", "ITWORX", "HUB", "ITWORX HUB", "Front-End"
+    "yeoman-generator",
+    "ITWORX",
+    "HUB",
+    "ITWORX-HUB",
+    "Front-End"
   ],
   "author": {
     "name": "Hamed Farag",
@@ -22,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/hamed-farag/generator-itworxhub/issues"
   },
-  "homepage": "https://github.com/hamed-farag/generator-itworxhub#readme"
+  "homepage": "https://github.com/hamed-farag/generator-itworxhub#readme",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "lodash": "^4.17.5",
+    "yeoman-generator": "^2.0.3",
+    "yosay": "^2.0.1"
+  }
 }
