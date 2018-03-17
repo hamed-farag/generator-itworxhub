@@ -1,0 +1,26 @@
+{
+  "name": "generator-itworxhub",
+  "version": "0.0.1",
+  "description": "Tool to help the front-end developer at ITWORX HUB Team to save his time by scaffolding the repetitive tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamed-farag/generator-itworxhub.git"
+  },
+  "keywords": [
+    "yeoman-generator", "ITWORX", "HUB", "ITWORX HUB", "Front-End"
+  ],
+  "author": {
+    "name": "Hamed Farag",
+    "email": "hamed.farag.2009@gmail.com",
+    "url": "http://www.hamedfarag.com"
+  },
+  "license": "apache-2.0",
+  "bugs": {
+    "url": "https://github.com/hamed-farag/generator-itworxhub/issues"
+  },
+  "homepage": "https://github.com/hamed-farag/generator-itworxhub#readme"
+}
