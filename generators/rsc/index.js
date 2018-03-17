@@ -28,11 +28,11 @@ module.exports = class extends Generator {
     }
     configuring() {}
     writing() {
-        const componentName = this.options.componentName;
+        const componentName = _.camelCase(this.options.componentName);
         this.fs.copyTpl(
             this.templatePath('reactDumpComponent.js'),
             this.destinationPath(`${componentName}/index.jsx`), {
-                componentName: _.camelCase(componentName),
+                componentName: componentName,
                 hasStyleSheet: this.hasStyleSheet
             }
         );
@@ -41,7 +41,7 @@ module.exports = class extends Generator {
             this.fs.copyTpl(
                 this.templatePath('reactDumpComponent.scss'),
                 this.destinationPath(`${componentName}/styles.scss`), {
-                    componentName: _.camelCase(componentName)
+                    componentName: componentName
                 }
             );
         }
