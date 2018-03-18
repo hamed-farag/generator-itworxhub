@@ -17,3 +17,7 @@ You can use the following commands
 yo itworxhub:rsc <ComponentName>
 ```
 This command to create React Stateless Component
+```bash
+yo itworxhub:rc <ComponentName>
+```
+This command to create React Smart Component
