@@ -48,5 +48,7 @@ module.exports = class extends Generator {
     }
     conflicts() {}
     install() {}
-    end() {}
+    end() {
+        this.log(chalk.yellow('React Stateless Component Created Successfully!'));
+    }
 };

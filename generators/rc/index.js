@@ -48,7 +48,9 @@ module.exports = class extends Generator {
     }
     conflicts() {}
     install() {}
-    end() {}
+    end() {
+        this.log(chalk.yellow('React Component Created Successfully!'));
+    }
     _capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
