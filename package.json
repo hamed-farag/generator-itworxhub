@@ -1,6 +1,6 @@
 {
   "name": "generator-itworxhub",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tool to help the front-end developer at ITWORX HUB Team to save his time by scaffolding the repetitive tasks",
   "main": "generators/app/index.js",
   "scripts": {
