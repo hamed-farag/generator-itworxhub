@@ -4,7 +4,7 @@
   "description": "Tool to help the front-end developer at ITWORX HUB Team to save his time by scaffolding the repetitive tasks",
   "main": "generators/app/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",

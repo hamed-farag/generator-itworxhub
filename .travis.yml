@@ -1,6 +1,3 @@
 language: node_js
 node_js:
   - v8
-scripts:
-  - npm run -g gulp 
-  - gulp test
