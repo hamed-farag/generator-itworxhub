@@ -1,4 +1,6 @@
 language: node_js
 node_js:
   - v8
-script: gulp coveralls
+script: 
+  - gulp test
+  - gulp coveralls
