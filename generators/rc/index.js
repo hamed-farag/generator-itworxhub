@@ -3,6 +3,10 @@ var Generator = require('yeoman-generator'),
     _ = require('lodash'),
     chalk = require('chalk');
 
+var {
+    capitalizeFirstLetter
+} = require('../../helpers');
+
 module.exports = class extends Generator {
     constructor(args, opts) {
         super(args, opts);
@@ -28,7 +32,7 @@ module.exports = class extends Generator {
     }
     configuring() {}
     writing() {
-        const componentName = this._capitalizeFirstLetter(_.camelCase(this.options.componentName));
+        const componentName = capitalizeFirstLetter(_.camelCase(this.options.componentName));
         this.fs.copyTpl(
             this.templatePath('reactComponent.js'),
             this.destinationPath(`${componentName}/index.jsx`), {
@@ -50,8 +54,5 @@ module.exports = class extends Generator {
     install() {}
     end() {
         this.log(chalk.yellow('React Component Created Successfully!'));
-    }
-    _capitalizeFirstLetter(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
     }
 };
