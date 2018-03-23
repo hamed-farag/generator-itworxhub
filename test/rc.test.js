@@ -28,6 +28,10 @@ describe('itworxhub:rc', function () {
                 `${capitalizeFirstLetter(componentName)}/index.jsx`,
                 `<div className='${capitalizeFirstLetter(componentName)}Container'>`
             );
+            yoTestAssert.fileContent(
+                `${capitalizeFirstLetter(componentName)}/index.jsx`,
+                `${capitalizeFirstLetter(componentName)} extends React.Component{`
+            );
         });
     });
 
@@ -46,6 +50,11 @@ describe('itworxhub:rc', function () {
                 `${capitalizeFirstLetter(componentName)}/index.jsx`,
                 `<div className='${capitalizeFirstLetter(componentName)}Container'>`
             );
+            yoTestAssert.fileContent(
+                `${capitalizeFirstLetter(componentName)}/index.jsx`,
+                `${capitalizeFirstLetter(componentName)} extends React.Component{`
+            );
         });
+
     });
 });
