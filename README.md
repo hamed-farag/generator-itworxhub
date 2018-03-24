@@ -23,3 +23,7 @@ This command to create React Stateless Component
 yo itworxhub:rc <ComponentName>
 ```
 This command to create React Smart Component
+```bash
+yo itworxhub:rrc <ComponentName>
+```
+This command to create React Redux Component
