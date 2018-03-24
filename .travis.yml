@@ -1,6 +1,16 @@
 language: node_js
 node_js:
-  - v8
-script: 
-  - gulp test
-  - gulp coveralls
+- v8
+script:
+- gulp test
+- gulp coveralls
+branches:
+  only:
+  - master
+deploy:
+  provider: npm
+  email: hamed.farag.2009@gmail.com
+  api_key:
+    secure: Ik/FveiM+0e49e8WrANPJl4OXPhJvvBh7UeX9bWGE+oTWSTlmiWaTTA+wLNGLt4FXlBzT9u4r1S00WW8FeTu2TctGeiENTVFqDmOw/FFpfjhkyGX1eDshJCGxnN3UcyeOoqeFMISatosdskHN3DITd+sWz8hD8HYjF6QwtwTRVrpQsZnZTb2coknnYhR2hyJ4rL56kQwRFjGrSUQXFwyYD5AkAgxqrfoUFlqK9VxF4QMeKGuSEBD43Cw5HiIx3Lf7Uweu3nNtrz0O+qYDbZJx6Ou5cTD6HiA+beqsOv+D/beBlHvMlErGloySS354LtIxaMlv1ZPM7qhf7s+CtB5yKSCZ7MOO7bawt+BZQ8e4HMbWtbTSD66Zuu/n3n7opsU1YXFlZYWQpomwIajZmqGUppoxPw+jcO6MAN50r04/VQw7sOwGmNYrQ6fJpCd0hqSoY/+izWRuN7Pl1jfck0MjtYj024kxaZIzIB4eMKRvOdU3y5AaHbR4DUG3ZyhVZOrm2RRjAfiP0RPnPkhnaanEAQgjkkccXl/xj93pSyjn1ZlGPoObtiqAC1g7cUgFHU1RCZfVbSEvb0umThZonCPQZvr4haABBuDbaDW9ufSE/iXFQIIfLBbmQOrOc1wauNYAERaXvcGRmU/sOWAphiWnVDOLP0rhFxf6p40NwBbkKY=
+  on:
+    branch: master
